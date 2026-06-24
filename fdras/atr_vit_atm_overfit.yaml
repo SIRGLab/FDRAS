@@ -1,0 +1,93 @@
+# Overfit config (ATM) - 4 cases
+
+data_root: "D:/Francis/Luma/seg_qa/runs/CT_Training_Data/ATM_Data"
+ct_subdir: "imagesTr"
+pred_subdir: "nnUNet_masksTr"
+gt_subdir: "labelsTr"
+val_count: 0
+test_count: 0
+seed: 42
+
+train_case_ids: null
+overfit_use_train_as_val: false
+val_data_roots:
+  - "D:/Francis/Luma/seg_qa/runs/CT_Training_Data/ARIC_Data"
+val_sample_csv: "D:/Francis/Luma/seg_qa/runs/CT_Training_Data/ARIC_Data/nnunet_quality_per_case.csv"
+val_sample_metric: "Dice"
+val_sample_n: 30
+val_sample_bins: 5
+val_sample_seed: 42
+train_extra_subdirs:
+  - "nnUNet_masksTr_TreeErrTr"
+  - "nnUNet_masksTr_SDFErrTr"
+val_extra_subdirs: []
+
+ct_window_min: -1000.0
+ct_window_max: 300.0
+
+patch_size: [96, 96, 96]
+batch_size: 1
+num_workers: 0
+use_pos_neg_crop: true
+pos_ratio: 9
+neg_ratio: 1
+num_samples: 10
+flatten_samples: true
+expand_epoch_samples: true
+repeat_per_case: 50
+use_persistent_cache: true
+cache_dir: "runs/overfitting_test"
+train_full_volume: false
+val_full_volume: true
+val_use_sliding_window: true
+sw_overlap: 0.5
+sw_batch_size: 1
+train_use_sliding_window: false
+train_sw_overlap: 0.5
+train_sw_batch_size: 1
+train_use_grid_patch: false
+train_grid_overlap: 0.25
+train_use_rand_grid_patch: false
+train_rand_grid_overlap: 0.0
+train_rand_grid_num_patches: 1
+use_ct_input: true
+
+base_channels: 16
+norm: "INSTANCE"
+num_res_units: 1
+
+w_l1: 0.0
+w_dice: 2.0
+w_bce: 1.0
+w_cldice: 0.0
+w_ccf: 0.0
+w_consistency: 0.0
+w_gan: 0.01
+cldice_iters: 3
+ccf_iters: 3
+
+epochs: 200
+lr_g: 0.001
+lr_d: 0.001
+weight_decay: 0.00001
+val_every: 1
+val_max_batches: 0
+val_repeat_per_case: 1
+save_val_case_id: "ATM_001_0000"
+save_val_out_dir: "runs/overfitting_test/epoch_preds"
+save_val_every: 1
+save_val_prob: true
+save_val_mask: true
+
+amp: false
+device: "cuda"
+
+out_dir: "runs/repair_model/atr_refine_vit_overfit"
+save_every: 5
+use_tqdm: true
+
+use_wandb: true
+wandb_project: "atr-refine-vit-overfit"
+wandb_entity: "francis-xiatian-zhang-sirg"
+wandb_run_name: null
+wandb_tags: ["overfit", "atr", "no-gan"]

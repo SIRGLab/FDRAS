@@ -15,6 +15,14 @@ The exvivo airway dataset used in this work is available at:
 
 [https://uoe-my.sharepoint.com/:f:/g/personal/xzhang19_ed_ac_uk/IgCzBhGs_vdxSIZlCZ4d2JEvAY2DnOLe0_hZlbKOF2ju1Ss?e=QlL122](https://uoe-my.sharepoint.com/:f:/g/personal/xzhang19_ed_ac_uk/IgCzBhGs_vdxSIZlCZ4d2JEvAY2DnOLe0_hZlbKOF2ju1Ss?e=QlL122)
 
+## Supplementary material
+
+The archived TfeNet–AeroPath reanalysis table (DSC, Precision, TD, BD, and the tree/SDF error-map ablation) is available in Markdown format:
+
+- [`paper/supp_table.md`](paper/supp_table.md)
+
+All values in that table are derived solely from the archived predictions and evaluation outputs used in the submitted manuscript; no new training, data, or experiments were introduced.
+
 ## Repository contents
 
 - `checkpoint_best.pt` – trained FDRAS checkpoint used in the paper.

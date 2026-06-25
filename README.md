@@ -9,6 +9,12 @@ Official open-access source code for the MICCAI 2026 paper:
 
 FDRAS is a failure-aware repair framework for airway segmentation in chest CT. It first diagnoses common failure modes (e.g., leaks, disconnected branches, and missing subtrees) from a preliminary airway mask, then iteratively refines the mask with a diffusion-style repair network conditioned on the diagnosed failure evidence. This repository contains the trained checkpoint, inference scripts, training code, and model configurations used to produce the paper results.
 
+## Exvivo dataset
+
+The exvivo airway dataset used in this work is available at:
+
+[https://uoe-my.sharepoint.com/:f:/g/personal/xzhang19_ed_ac_uk/IgCzBhGs_vdxSIZlCZ4d2JEvAY2DnOLe0_hZlbKOF2ju1Ss?e=QlL122](https://uoe-my.sharepoint.com/:f:/g/personal/xzhang19_ed_ac_uk/IgCzBhGs_vdxSIZlCZ4d2JEvAY2DnOLe0_hZlbKOF2ju1Ss?e=QlL122)
+
 ## Repository contents
 
 - `checkpoint_best.pt` – trained FDRAS checkpoint used in the paper.

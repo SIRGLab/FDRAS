@@ -21,7 +21,7 @@ The archived TfeNet–AeroPath reanalysis table (DSC, Precision, TD, BD, and the
 
 - [`paper/supp_table.md`](paper/supp_table.md)
 
-All values in that table are derived solely from the archived predictions and evaluation outputs used in the submitted manuscript; no new training, data, or experiments were introduced.
+Per MICCAI policy, no new experiments, training, or data may be introduced in the open-access source package. All values in `paper/supp_table.md` are therefore derived solely from the archived predictions and evaluation outputs used in the submitted manuscript.
 
 ## Repository contents
 

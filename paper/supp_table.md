@@ -1,6 +1,6 @@
 # Supplementary table: archived TfeNet–AeroPath reanalysis
 
-> All results reported below are derived solely from reanalysis of the archived predictions and evaluation outputs generated for the submitted manuscript. No additional training, data, or experiments were introduced.
+> Per MICCAI policy, the open-access source package must not introduce new experiments, training, or data. All results reported below are therefore derived solely from reanalysis of the archived predictions and evaluation outputs generated for the submitted manuscript.
 
 ## (a) TfeNet → TfeNet+FDRAS on AeroPath (*n* = 27)
 

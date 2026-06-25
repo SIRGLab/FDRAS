@@ -17,7 +17,7 @@ FDRAS is a failure-aware repair framework for airway segmentation in chest CT. I
 - `train.py` – training script.
 - `data.py` – data loading and augmentation utilities.
 - `model/` – diagnosis and repair network definitions.
-- `fdras/` – experiment YAML configuration files.
+- `fdras/fdras_full.yaml` – main training configuration.
 
 ## Requirements
 

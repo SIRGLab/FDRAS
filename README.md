@@ -17,11 +17,12 @@ The exvivo airway dataset used in this work is available at:
 
 ## Supplementary material
 
-The archived TfeNet–AeroPath reanalysis table (DSC, Precision, TD, BD, and the tree/SDF error-map ablation) is available in Markdown format:
+The archived TfeNet–AeroPath reanalysis tables are available in Markdown format:
 
-- [`paper/supp_table.md`](paper/supp_table.md)
+- [`paper/supp_table.md`](paper/supp_table.md) — case-level DSC, Precision, TD, BD, and the tree/SDF error-map ablation.
+- [`paper/auroc_results.md`](paper/auroc_results.md) — FDRAS diagnostic error-map strict-XOR AUROC results on AeroPath.
 
-Per MICCAI policy, no new experiments, training, or data may be introduced in the open-access source package. All values in `paper/supp_table.md` are therefore derived solely from the archived predictions and evaluation outputs used in the submitted manuscript.
+Per MICCAI policy, no new experiments, training, or data may be introduced in the open-access source package. All values are therefore derived solely from the archived predictions and evaluation outputs used in the submitted manuscript.
 
 ## Repository contents
 

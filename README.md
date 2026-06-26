@@ -15,7 +15,7 @@ The exvivo airway dataset used in this work is available at:
 
 [https://uoe-my.sharepoint.com/:f:/g/personal/xzhang19_ed_ac_uk/IgCzBhGs_vdxSIZlCZ4d2JEvAY2DnOLe0_hZlbKOF2ju1Ss?e=QlL122](https://uoe-my.sharepoint.com/:f:/g/personal/xzhang19_ed_ac_uk/IgCzBhGs_vdxSIZlCZ4d2JEvAY2DnOLe0_hZlbKOF2ju1Ss?e=QlL122)
 
-## Supplementary material
+## More details
 
 The archived TfeNet–AeroPath reanalysis tables are available in Markdown format:
 

@@ -75,6 +75,10 @@ python -m train --config fdras/fdras_full.yaml
 
 Update the paths in the YAML config to point to your local data before training.
 
+## Notes
+
+Internal reanalysis records and implementation notes are kept under `paper/` for reference.
+
 ## Citation
 
 If you use this code, please cite:

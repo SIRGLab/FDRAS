@@ -7,22 +7,13 @@ Official open-access source code for the MICCAI 2026 paper:
 
 ## Overview
 
-FDRAS is a failure-aware repair framework for airway segmentation in chest CT. It first diagnoses common failure modes (e.g., leaks, disconnected branches, and missing subtrees) from a preliminary airway mask, then iteratively refines the mask with a diffusion-style repair network conditioned on the diagnosed failure evidence. This repository contains the trained checkpoint, inference scripts, training code, and model configurations used to produce the paper results.
+FDRAS is a two-stage failure diagnosis and repair framework for airway segmentation in chest CT. It first predicts complementary SDF-based geometric and tree-level connectivity error maps from an initial airway segmentation and its corresponding CT volume. These predicted failure maps then guide a cross-attention-conditioned residual refinement network to perform spatially targeted corrections. This repository contains the trained checkpoint, inference scripts, training code, and model configurations used in the paper.
 
 ## Exvivo dataset
 
 The exvivo airway dataset used in this work is available at:
 
 [https://uoe-my.sharepoint.com/:f:/g/personal/xzhang19_ed_ac_uk/IgCzBhGs_vdxSIZlCZ4d2JEvAY2DnOLe0_hZlbKOF2ju1Ss?e=QlL122](https://uoe-my.sharepoint.com/:f:/g/personal/xzhang19_ed_ac_uk/IgCzBhGs_vdxSIZlCZ4d2JEvAY2DnOLe0_hZlbKOF2ju1Ss?e=QlL122)
-
-## More details
-
-The archived TfeNet–AeroPath reanalysis tables are available in Markdown format:
-
-- [`paper/supp_table.md`](paper/supp_table.md) — case-level DSC, Precision, TD, BD, and the tree/SDF error-map ablation.
-- [`paper/auroc_results.md`](paper/auroc_results.md) — FDRAS diagnostic error-map strict-XOR AUROC results on AeroPath.
-
-Per MICCAI policy, no new experiments, training, or data may be introduced in the open-access source package. All values are therefore derived solely from the archived predictions and evaluation outputs used in the submitted manuscript.
 
 ## Repository contents
 

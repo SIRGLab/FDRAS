@@ -24,6 +24,7 @@ The exvivo airway dataset used in this work is available at:
 - `data.py` – data loading and augmentation utilities.
 - `model/` – diagnosis and repair network definitions.
 - `fdras/fdras_full.yaml` – main training configuration.
+- `visualize_error_map.py` – 3D rendering of predicted error maps (Fig. 3 style).
 
 ## Requirements
 
@@ -51,8 +52,23 @@ python -m predict \
   --pred /path/to/preliminary_mask.nii.gz \
   --out_prob output/prob.nii.gz \
   --out_mask output/mask.nii.gz \
-  --threshold 0.5
+  --threshold 0.5 \
+  --out_err_dir output/err
 ```
+
+`--out_err_dir` (optional) saves the predicted tree and SDF error maps (`tree_err.nii.gz`, `sdf_err.nii.gz`, sigmoid outputs).
+
+## Error-map visualization
+
+```bash
+python -m visualize_error_map \
+  --mask /path/to/preliminary_mask.nii.gz \
+  --err output/err/sdf_err.nii.gz \
+  --refined output/mask.nii.gz \
+  --out output/sdf_err_fig.png
+```
+
+Colour limits are percentiles of the sampled error values; the raw range is shown on the colorbar and written to the sidecar `.json`.
 
 ## Batch inference
 
